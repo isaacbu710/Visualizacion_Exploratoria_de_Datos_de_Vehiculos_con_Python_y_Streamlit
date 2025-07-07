@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 
 # Cargar el archivo CSV desde la ruta correcta
-car_data = pd.read_csv('C:/Users/herna/Documents/sprint_7/proyecto_sprint_7/notebooks/vehicles_us.csv')
+car_data = pd.read_csv('car_data = pd.read_csv('vehicles_us.csv')')
 
 # Crear un checkbox para permitir la construcción del histograma
 build_histogram = st.checkbox('¿Construir histograma?')
