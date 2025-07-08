@@ -3,6 +3,13 @@ import pandas as pd
 import plotly.express as px
 import os
 
+# Configuración del puerto mejorada
+port = int(os.environ.get('PORT', 8501))  # 8501 es el puerto por defecto de Streamlit
+
+# El resto de tu código permanece igual...
+car_data = pd.read_csv('vehicles_us.csv')
+st.title('Visualización de datos de vehículos')
+
 # Obtener el puerto de entorno (opcional, pero no es obligatorio dentro del script si usas --server.port en Render)
 port = int(os.environ.get('PORT', 8501))
 
